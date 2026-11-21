@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Form</title>
+</head>
+<body>
+
+<h2>University Admission Form</h2>
+
+<form>
+
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
+        <br><br>
+
+        <label>Father's Name:</label>
+        <input type="text" name="father_name" required>
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Academic Information -->
+    <fieldset>
+        <legend>Academic Information</legend>
+
+        <label>Previous Qualification:</label>
+        <select name="qualification">
+            <option value="matric">Matric</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="a-level">A-Level</option>
+        </select>
+        <br><br>
+
+        <label>Program:</label>
+        <select name="program">
+
+            <optgroup label="Computing">
+                <option>BS Computer Science</option>
+                <option>BS Cyber Security</option>
+                <option>BS Software Engineering</option>
+            </optgroup>
+
+            <optgroup label="Engineering">
+                <option>Electrical Engineering</option>
+                <option>Civil Engineering</option>
+                <option>Mechanical Engineering</option>
+            </optgroup>
+
+        </select>
+
+        <br><br>
+
+        <label>Marks:</label>
+        <input type="number" name="marks" min="0" max="1100">
+
+    </fieldset>
+
+    <br>
+
+    <!-- Contact Information -->
+    <fieldset>
+        <legend>Contact Information</legend>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label>Phone:</label>
+        <input type="tel" name="phone" required>
+        <br><br>
+
+        <label>Address:</label>
+        <textarea name="address" rows="4" cols="30"></textarea>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Documents -->
+    <fieldset>
+        <legend>Documents</legend>
+
+        <label>Upload Photo:</label>
+        <input type="file" name="photo">
+        <br><br>
+
+        <label>Upload Documents:</label>
+        <input type="file" name="documents" multiple>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Declaration -->
+    <fieldset>
+        <legend>Declaration</legend>
+
+        <input type="checkbox" name="declaration" required>
+        I declare that the information provided above is correct.
+
+        <br><br>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset">
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>
